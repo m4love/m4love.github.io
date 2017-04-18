@@ -99,8 +99,34 @@ div#splite_curtain {
 	cursor: pointer;
 }
 
-table, th, td {
-    border: 1px solid black;
+/*Added divs*/
+
+.outer {
+  display: flex;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.innerdivs {
+	display: inline-block;
+	padding: 5px;
+	background-color: #10346d;
+	color: white;
+  text-align: justify;
+
+}
+
+.insidetable {
+	border: solid;
+	table-layout:fixed;
+	width:100%;
+	text-align: left;
+	padding: 10px;
+	color: black;">
+}
+
+.title h3 {
+	text-align: left; padding:10px
 }
 </style>
 
@@ -211,14 +237,71 @@ img.emoji {
 	</div> -->
 	<!-- end photo header -->
 
+
 <!-- start panels -->
-	<div>
-		<table id="basetable">
+	<div class="hpPanel" style=" margin: auto; width: 65%; padding: 10px; margin-left: 200px; margin-top:100px">
+		<table id="basetable" style="table-layout:fixed; width:500px;">
 			<tr>
-				<p>Slack</p>
+				<table class="insidetable">
+					<tr class="title">
+						<td>
+							<h3 style="text-align: left; padding:10px">Slack</h3>
+						</td>
+					</tr>
+					<tr class="description">
+						<td>Description</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="outer">
+							    <div class="innerdivs">
+							        Team Communications
+							    </div>
+									<div style="width:5px"></div>
+							    <div class="innerdivs">
+							        Utitlities
+							    </div>
+									<div style="width:5px"></div>
+							    <div class="innerdivs">
+							        Faster communication
+							    </div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</tr>
+			<tr>
+				<table class="insidetable">
+					<tr class="title">
+						<td>
+							<h3>Twilio</h3>
+						</td>
+					</tr>
+					<tr class="description">
+						<td>Allows to send SMS</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="outer">
+							    <div class="innerdivs">
+							        Team Communications
+							    </div>
+									<div style="width:5px"></div>
+							    <div class="innerdivs">
+							        Utitlities
+							    </div>
+									<div style="width:5px"></div>
+							    <div class="innerdivs">
+							        Faster communication
+							    </div>
+							</div>
+						</td>
+					</tr>
+				</table>
 			</tr>
 		</table>
 	</div>
+
   <div class="s3ept">
     <div class="hpPanel" id="hpPanel0" style="padding-top:40px; padding-bottom: 40px;">
           <div class="hpPanelInner">
