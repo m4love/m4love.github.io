@@ -20,4 +20,11 @@ var services = [
     "link": "https://www.clerky.com/",
     "tags": ["legal"]
   },
+  {
+    "name" : "Something",
+    "short_description" : "Automated legal paperwork for startups.",
+    "description" : "",
+    "link": "https://www.clerky.com/",
+    "tags": ["legal"]
+  },
 ];
