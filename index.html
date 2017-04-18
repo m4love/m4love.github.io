@@ -99,35 +99,7 @@ div#splite_curtain {
   cursor: pointer;
 }
 
-/*Added divs*/
 
-.outer {
-  display: flex;
-	padding-right: 10px;
-	padding-top: 10px;
-}
-
-.innerdivs {
-	display: inline-block;
-	padding: 5px;
-	background-color: #10346d;
-	color: white;
-  text-align: justify;
-
-}
-
-.insidetable {
-	border: solid;
-	table-layout:fixed;
-	width:100%;
-	text-align: left;
-	padding: 10px;
-	color: black;">
-}
-
-.title h3 {
-	text-align: left; padding:10px
-}
 </style>
 
 
@@ -248,69 +220,52 @@ img.emoji {
 
 
 <!-- start panels -->
-	<div class="hpPanel" style=" margin: auto; width: 65%; padding: 10px; margin-left: 200px; margin-top:100px">
-		<table id="basetable" style="table-layout:fixed; width:500px;">
-			<tr>
-				<table class="insidetable">
-					<tr class="title">
-						<td>
-							<h3 style="text-align: left; padding:10px">Slack</h3>
-						</td>
-					</tr>
-					<tr class="description">
-						<td>Description</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="outer">
-							    <div class="innerdivs">
-							        Team Communications
-							    </div>
-									<div style="width:5px"></div>
-							    <div class="innerdivs">
-							        Utitlities
-							    </div>
-									<div style="width:5px"></div>
-							    <div class="innerdivs">
-							        Faster communication
-							    </div>
-							</div>
-						</td>
-					</tr>
-				</table>
-			</tr>
-			<tr>
-				<table class="insidetable">
-					<tr class="title">
-						<td>
-							<h3>Twilio</h3>
-						</td>
-					</tr>
-					<tr class="description">
-						<td>Allows to send SMS</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="outer">
-							    <div class="innerdivs">
-							        Team Communications
-							    </div>
-									<div style="width:5px"></div>
-							    <div class="innerdivs">
-							        Utitlities
-							    </div>
-									<div style="width:5px"></div>
-							    <div class="innerdivs">
-							        Faster communication
-							    </div>
-							</div>
-						</td>
-					</tr>
-				</table>
-			</tr>
-		</table>
-	</div>
 
+
+
+
+<div class="hpPanel" class="background-color:white">
+  <div class="hpPanelInner">
+    <div class="container">
+      <div class="list-group" style="text-align:left;">
+        <div class="list-group-item">
+          <a href="https://slack.com">
+            <h3 class="list-group-item-heading">Slack</h3>
+          </a>
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#slack-info">Info</a></li>
+            <li><a data-toggle="tab" href="#slack-description">Description</a></li>
+            <li><a data-toggle="tab" href="#slack-pricing">Pricing</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="slack-info" class="tab-pane fade in active">
+              <p class="list-group-item-text">A cloud-based team collaboration tool.</p>
+              <br>
+              <span class="label label-info" style="margin-left:4px;">
+                communications
+              </span>
+              <span class="label label-info" style="margin-left:4px;">
+                teamwork
+              </span>
+            </div>
+            <div id="slack-description" class="tab-pane fade">
+              <p>Since the advent of the World Wide Web, the opportunity for collaboration has been one of its most touted features. Enter Slack!</p>
+              <br>
+            </div>
+            <div id="slack-pricing" class="tab-pane fade">
+              <p>Free for small team</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Evgeny -->
   <div class="hpPanel">
     <div class="hpPanelInner" id="resources">
     </div>
