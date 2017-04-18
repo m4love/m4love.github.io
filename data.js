@@ -2,8 +2,10 @@ var services = [
   {
     "name" : "Slack",
     "short_description" : "A cloud-based team collaboration tool.",
-    "description" : "",
+    "description" : "Awesome rocking app",
     "link": "https://slack.com",
+    "pricing": "Capitalism but free for less people",
+    "recommendation" : "Good to communicate very popular",
     "tags": ["communications", "teamwork"]
   },
   {
@@ -11,6 +13,8 @@ var services = [
     "short_description" : "Simple accounting tool for startups.",
     "description" : "",
     "link": "https://quickbooks.intuit.com/",
+    "pricing": "Capitalism but free for less people",
+    "recommendation" : "",
     "tags": ["accounting"]
   },
   {
@@ -18,6 +22,8 @@ var services = [
     "short_description" : "Automated legal paperwork for startups.",
     "description" : "",
     "link": "https://www.clerky.com/",
+    "pricing": "",
+    "recommendation" : "",
     "tags": ["legal"]
   },
   {
@@ -25,6 +31,8 @@ var services = [
     "short_description" : "Automated legal paperwork for startups.",
     "description" : "",
     "link": "https://www.clerky.com/",
+    "pricing": "",
+    "recommendation" : "",
     "tags": ["legal"]
   },
 ];

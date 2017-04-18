@@ -26,7 +26,37 @@ function listGroups() {
         service.name +
       '</h3>';
     htmlTable += '</a>';
-    htmlTable += '<p class="list-group-item-text">' + service.short_description + '</p>';
+    htmlTable += '<p class="list-group-item-text">' + service.short_description + '</p>' +'<br>';
+    var service_name = service.name;
+    htmlTable += '<ul class="nav nav-tabs">' +
+    '<li class="active"><a data-toggle="tab" href="#' + service.name + '-description">Description</a></li>' +
+      '<li><a data-toggle="tab" href="#' + service.name + '-pricing">Pricing</a></li>' +
+      '<li><a data-toggle="tab" href="#' + service.name + '-recommendation">Recommendation</a></li>' +
+    '</ul>'+
+
+    '<div class="tab-content">' +
+      '<div id="'+ service.name + '-description" class="tab-pane fade in active">' +
+        '<p class="list-group-item-text">'+ service.description +'</p> <br>';
+      //
+      // // Case for putting tags inside descritption element
+      //   htmlTable += '<br>';
+      //   if (service.tags) {
+      //     service.tags.forEach(function (tag) {
+      //       htmlTable += '<span class="label label-info" style="margin-left:4px;">' + tag + '</span>';
+      //     });
+      //   }
+
+      htmlTable += '</div>' +
+      '<div id="'+ service.name + '-pricing" class="tab-pane fade">' +
+        '<p>'+ service.pricing +'</p>' +
+        '<br>' +
+      '</div>' +
+      '<div id="' + service.name + '-recommendation" class="tab-pane fade">' +
+        '<p>'+ service.recommendation+'</p>' +
+        '<br>'+
+      '</div>' +
+    '</div>';
+
     htmlTable += '<br>';
     if (service.tags) {
       service.tags.forEach(function (tag) {
