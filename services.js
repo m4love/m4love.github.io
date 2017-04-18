@@ -45,7 +45,7 @@ function listGroups() {
       //       htmlTable += '<span class="label label-info" style="margin-left:4px;">' + tag + '</span>';
       //     });
       //   }
-
+//
       htmlTable += '</div>' +
       '<div id="'+ service.name + '-pricing" class="tab-pane fade">' +
         '<p>'+ service.pricing +'</p>' +

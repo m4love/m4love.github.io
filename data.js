@@ -32,7 +32,7 @@ var services = [
     "description" : "",
     "link": "https://www.clerky.com/",
     "pricing": "",
-    "recommendation" : "",
+    "recommendation" : "Nope",
     "tags": ["legal"]
   },
 ];
