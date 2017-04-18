@@ -19,11 +19,13 @@ $(function() {
 function listGroups() {
   var htmlTable = '<div class="list-group" style="text-align: left;">';
   services.forEach(function (service) {
-    htmlTable += '<a href="' + service.link + '" class="list-group-item">';
+    htmlTable += '<div class="list-group-item">';
+    htmlTable += '<a href="' + service.link + '">';
     htmlTable +=
       '<h3 class="list-group-item-heading" >' +
         service.name +
       '</h3>';
+    htmlTable += '</a>';
     htmlTable += '<p class="list-group-item-text">' + service.short_description + '</p>';
     htmlTable += '<br>';
     if (service.tags) {
@@ -31,7 +33,7 @@ function listGroups() {
         htmlTable += '<span class="label label-info" style="margin-left:4px;">' + tag + '</span>';
       });
     }
-    htmlTable += '</a>';
+    htmlTable += '</div>';
   });
   htmlTable += "</div>"
   $('#resources').html(htmlTable);
