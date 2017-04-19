@@ -1,3 +1,10 @@
+var categories = [
+  "Legal",
+  "Marketing",
+  "UX/UI",
+  "Product Development"
+]
+
 var services = [
   {
     "name" : "Slack",

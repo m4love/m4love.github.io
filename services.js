@@ -1,6 +1,8 @@
 $(function() {
   // Handler for .ready() called.
+
   listGroups();
+  updateCategories();
 });
 
 // function updateServices() {
@@ -67,4 +69,26 @@ function listGroups() {
   });
   htmlTable += "</div>"
   $('#resources').html(htmlTable);
+}
+
+function updateCategories() {
+  var htmlTable = '';
+  categories.forEach(function (category) {
+    var prettified = category.replace(/[^a-zA-Z]/g, "")
+    htmlTable += '<div class="panel panel-default">';
+      htmlTable += '<div class="panel-heading" role="tab" id="headingOne">';
+        htmlTable += '<h4 class="panel-title">';
+          htmlTable += '<a role="button" data-toggle="collapse" data-parent="#accordion" href="#' + prettified + '-category" aria-expanded="true" aria-controls="collapseOne">';
+            htmlTable += category;
+          htmlTable += '</a>';
+        htmlTable += '</h4>';
+      htmlTable += '</div>';
+      htmlTable += '<div id="' + prettified + '-category" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">';
+        htmlTable += '<div class="panel-body">';
+          htmlTable += 'jfslkdfs';
+        htmlTable += '</div>';
+      htmlTable += '</div>';
+    htmlTable += '</div>';
+  });
+  $('#accordion').html(htmlTable);
 }
