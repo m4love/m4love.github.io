@@ -7,7 +7,6 @@ $(function() {
 function listServices(category) {
 
   var filteredServices = services.filter(function(service) {
-    console.log(service);
     return service.Category == category;
   });
   var htmlTable = '<div class="list-group" style="text-align: left; border-top: 0px; ">';
