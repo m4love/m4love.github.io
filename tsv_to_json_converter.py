@@ -30,4 +30,6 @@ for i in range(resources_data.shape[0]):
 print "var categories = " + json.dumps(list(categories)) + ";"
 
 services_dict = temp.to_dict(orient="records")
-print "var services = " + json.dumps(services_dict, indent=4, separators=(',', ': ')) + ";"
+
+services_list = filter(lambda x: x["Name"] != "", services_dict)
+print "var services = " + json.dumps(services_list, indent=4, separators=(',', ': ')) + ";"
