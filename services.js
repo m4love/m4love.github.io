@@ -5,29 +5,31 @@ $(function() {
 });
 
 function listServices(category) {
+
   var filteredServices = services.filter(function(service) {
-    return service.category == category;
+    console.log(service);
+    return service.Category == category;
   });
   var htmlTable = '<div class="list-group" style="text-align: left; border-top: 0px; ">';
   filteredServices.forEach(function (service) {
     htmlTable += '<div class="list-group-item" style="border-top: 1px solid rgb(47, 121, 185);">';
-    htmlTable += '<a href="' + service.link + '">';
+    htmlTable += '<a href="' + service.Link + '">';
     htmlTable +=
       '<h3 class="list-group-item-heading" >' +
-        service.name +
+        service.Name +
       '</h3>';
     htmlTable += '</a>';
-    htmlTable += '<p class="list-group-item-text">' + service.short_description + '</p>' +'<br>';
-    var service_name = service.name;
+    htmlTable += '<p class="list-group-item-text">' + service["Short Description"] + '</p>' +'<br>';
+    var service_name = service.Name;
     htmlTable += '<ul class="nav nav-tabs">' +
-    '<li class="active"><a data-toggle="tab" href="#' + service.name + '-description">Description</a></li>' +
-      '<li><a data-toggle="tab" href="#' + service.name + '-pricing">Pricing</a></li>' +
-      '<li><a data-toggle="tab" href="#' + service.name + '-recommendation">Recommendation</a></li>' +
+    '<li class="active"><a data-toggle="tab" href="#' + service.Name + '-description">Description</a></li>' +
+      '<li><a data-toggle="tab" href="#' + service.Name + '-pricing">Pricing</a></li>' +
+      '<li><a data-toggle="tab" href="#' + service.Name + '-recommendation">Recommendation</a></li>' +
     '</ul>'+
 
     '<div class="tab-content">' +
-      '<div id="'+ service.name + '-description" class="tab-pane fade in active">' +
-        '<p class="list-group-item-text">'+ service.description +'</p> <br>';
+      '<div id="'+ service.Name + '-description" class="tab-pane fade in active">' +
+        '<p class="list-group-item-text">'+ service.Description +'</p> <br>';
       //
       // // Case for putting tags inside descritption element
       //   htmlTable += '<br>';
@@ -38,19 +40,19 @@ function listServices(category) {
       //   }
 //
       htmlTable += '</div>' +
-      '<div id="'+ service.name + '-pricing" class="tab-pane fade">' +
-        '<p>'+ service.pricing +'</p>' +
+      '<div id="'+ service.Name + '-pricing" class="tab-pane fade">' +
+        '<p>'+ service.Pricing +'</p>' +
         '<br>' +
       '</div>' +
-      '<div id="' + service.name + '-recommendation" class="tab-pane fade">' +
-        '<p>'+ service.recommendation+'</p>' +
+      '<div id="' + service.Name + '-recommendation" class="tab-pane fade">' +
+        '<p>'+ service.Recommendation+'</p>' +
         '<br>'+
       '</div>' +
     '</div>';
 
     htmlTable += '<br>';
-    if (service.tags) {
-      service.tags.forEach(function (tag) {
+    if (service.Tags) {
+      service.Tags.forEach(function (tag) {
         htmlTable += '<span class="label label-info" style="margin-left:4px;">' + tag + '</span>';
       });
     }

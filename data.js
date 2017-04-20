@@ -1,51 +1,457 @@
-var categories = [
-  "Legal",
-  "Marketing",
-  "UX/UI",
-  "Product Development",
-  "Communication"
-]
-
+var categories = ["Marketing", "Other", "Teamwork", "Product Development", "Legal"];
 var services = [
-  {
-    "name" : "Slack",
-    "short_description" : "A cloud-based team collaboration tool.",
-    "category": "Communication",
-    "description" : "Awesome rocking app",
-    "link": "https://slack.com",
-    "pricing": "Capitalism but free for less people",
-    "recommendation" : "Good to communicate very popular",
-    "tags": ["communications", "teamwork"]
-  },
-  {
-    "name" : "QuickBooks",
-    "short_description" : "Simple accounting tool for startups.",
-    "category": "Product Development",
-    "description" : "",
-    "link": "https://quickbooks.intuit.com/",
-    "pricing": "Capitalism but free for less people",
-    "recommendation" : "",
-    "tags": ["accounting"]
-  },
-  {
-    "name" : "Clerky",
-    "short_description" : "Automated legal paperwork for startups.",
-    "category": "Legal",
-    "description" : "",
-    "link": "https://www.clerky.com/",
-    "pricing": "",
-    "recommendation" : "",
-    "tags": ["legal"]
-  },
-  {
-    "name" : "Something",
-    "short_description" : "Automated legal paperwork for startups.",
-    "category": "Legal",
-    "description" : "",
-    "link": "https://www.clerky.com/",
-    "pricing": "",
-    "recommendation" : "Nope",
-    "tags": ["legal"]
-  },
-  {"name":"MailChimp","short_description":"Email marketing software.","description":"MailChimp allows you to easily customize the way you send automated emails to most effectively market to your audience.","link":"http:\/\/mailchimp.com\/","pricing":"New Business (Free), Growing Business ($10 per month), Pro Marketer (additional $199 per month)","recommendation":"For any company that wants to customize and send automated emails to their audience.","tags":["Marketing","Advertising","User Retention"],"category":"Marketing"},{"name":"Basecamp","short_description":"Project management tool.","description":"Basecamp organizes all of your company's projects, communications, and resources in a centralized location.","link":"https:\/\/basecamp.com\/","pricing":"$99 per month, $1100 per year","recommendation":"Recommended if you have multiple projects at the same time and prefer to centralize team communications.","tags":["Project Management","Communications","Teamwork"],"category":"Teamwork"},{"name":"Trello","short_description":"Project management tool.","description":"Trello's drag-and-drop interface allows you to easily organize and manage your company's projects","link":"https:\/\/trello.com\/","pricing":"Free, Business Class ($9.99 per month), Enterprise ($20.83 per month)","recommendation":"Recommended if you prefer a visual-focused and user-friendly project management tool that is akin to using online whiteboards.","tags":["Project Management"," Communications"," Teamwork"],"category":"Teamwork"},{"name":"Slack","short_description":"Internal communication app.","description":"Slack organizes your internal communications through project-specific channels.","link":"https:\/\/slack.com\/ ","pricing":"Free, Standard ($6.67 per month), Plus ($12.50 per month)","recommendation":"For any company that wants to organize internal communications for improved team collaboration.","tags":["Communications"," Teamwork"],"category":"Teamwork"}
+    {
+        "Category": "Marketing",
+        "Name": "MailChimp",
+        "Tags": [
+            "Marketing",
+            " Advertising",
+            " User Retention"
+        ],
+        "Short Description": "Email marketing software.",
+        "Link": "http://mailchimp.com/",
+        "Pricing": "New Business (Free), Growing Business ($10 per month), Pro Marketer (additional $199 per month)",
+        "Recommendation": "For any company that wants to customize and send automated emails to their audience.",
+        "Description": "MailChimp allows you to easily customize the way you send automated emails to most effectively market to your audience."
+    },
+    {
+        "Category": "Teamwork",
+        "Name": "Basecamp",
+        "Tags": [
+            "Productivity",
+            " Communications",
+            " Teamwork"
+        ],
+        "Short Description": "Project management tool.",
+        "Link": "https://basecamp.com/",
+        "Pricing": "$99 per month, $1100 per year",
+        "Recommendation": "Recommended if you have multiple projects at the same time and prefer to centralize team communications.",
+        "Description": "Basecamp organizes all of your company's projects, communications, and resources in a centralized location."
+    },
+    {
+        "Category": "Teamwork",
+        "Name": "Trello",
+        "Tags": [
+            "Productivity",
+            " Communications",
+            " Teamwork"
+        ],
+        "Short Description": "Project management tool.",
+        "Link": "https://trello.com/",
+        "Pricing": "Free, Business Class ($9.99 per month), Enterprise ($20.83 per month)",
+        "Recommendation": "Recommended if you prefer a visual-focused and user-friendly project management tool that is akin to using online whiteboards.",
+        "Description": "Trello's drag-and-drop interface allows you to easily organize and manage your company's projects"
+    },
+    {
+        "Category": "Teamwork",
+        "Name": "Slack",
+        "Tags": [
+            "Communications",
+            " Teamwork"
+        ],
+        "Short Description": "Internal communications app.",
+        "Link": "https://slack.com/ ",
+        "Pricing": "Free, Standard ($6.67 per month), Plus ($12.50 per month)",
+        "Recommendation": "For any company that wants to organize internal communications for improved team collaboration.",
+        "Description": "Slack organizes your internal communications through project-specific channels."
+    },
+    {
+        "Category": "Product Development",
+        "Name": "UserVoice",
+        "Tags": [
+            "User Retention",
+            " Market Research"
+        ],
+        "Short Description": "Product feedback tool.",
+        "Link": "https://www.uservoice.com/",
+        "Pricing": "Varies.",
+        "Recommendation": "",
+        "Description": "UserVoice \"transforms product feedback into intelligent data to drive product strategy.\""
+    },
+    {
+        "Category": "Legal",
+        "Name": "Rocket Lawyer",
+        "Tags": [
+            "Legal"
+        ],
+        "Short Description": "Automated legal documents service and easy access to lawyers.",
+        "Link": "https://www.rocketlawyer.com/",
+        "Pricing": "Premium ($39.95 per month), Accelerate ($49.95 per month)",
+        "Recommendation": "",
+        "Description": "Rocklet Lawyer helps you easily create legal documents for your company and get legal advice from a lawyer."
+    },
+    {
+        "Category": "Legal",
+        "Name": "Startup Documents",
+        "Tags": [
+            "Legal"
+        ],
+        "Short Description": "Legal documents management and storage service.",
+        "Link": "https://www.startupdocuments.com/",
+        "Pricing": "Varies. Starts at $99 for a Terms of Service document and reaches up to form a California LLC.",
+        "Recommendation": "",
+        "Description": "Startup Documents generates and stores your company's documents during your early stages."
+    },
+    {
+        "Category": "Legal",
+        "Name": "Termsfeed",
+        "Tags": [
+            "Legal"
+        ],
+        "Short Description": "Automated legal documents service.",
+        "Link": "https://termsfeed.com/",
+        "Pricing": "Varies. Starts at $0 for general agreements and additional fees for additional clauses.",
+        "Recommendation": "",
+        "Description": "Termsfeed generates Terms of Service and Privacy Policies agreements."
+    },
+    {
+        "Category": "Legal",
+        "Name": "Trademark Factory",
+        "Tags": [
+            "Legal"
+        ],
+        "Short Description": "Trademark registration service.",
+        "Link": "https://trademarkfactory.ca/",
+        "Pricing": "I Feel Lucky ($1,495), All-Inclusive ($2,495), Ultimate ($5,995)",
+        "Recommendation": "",
+        "Description": "Trademark Factory registers your company's trademark to help you protect your intellectual property."
+    },
+    {
+        "Category": "Legal",
+        "Name": "Clerky",
+        "Tags": [
+            "Legal"
+        ],
+        "Short Description": "Automated legal documents service.",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Legal",
+        "Name": "",
+        "Tags": [
+            "Legal"
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Shopify",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "E-commerce platform.",
+        "Link": "https://www.shopify.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Searchmetrics",
+        "Tags": [
+            "Data & Analytics",
+            " Market Intellgience & Research"
+        ],
+        "Short Description": "",
+        "Link": "http://www.searchmetrics.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": "Market analysis tool."
+    },
+    {
+        "Category": "Other",
+        "Name": "Ryver",
+        "Tags": [
+            "Team Building"
+        ],
+        "Short Description": "",
+        "Link": "https://ryver.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": "Project management and team communication tool."
+    },
+    {
+        "Category": "Other",
+        "Name": "HelpScout",
+        "Tags": [
+            "User Retention",
+            " Data & Analytics"
+        ],
+        "Short Description": "",
+        "Link": "https://www.helpscout.net/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": "Tool for customer support and management."
+    },
+    {
+        "Category": "Other",
+        "Name": "Google Apps for Work",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "https://gsuite.google.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": "Internal infrastructure tools."
+    },
+    {
+        "Category": "Other",
+        "Name": "Asana",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "https://asana.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": "Project management tool."
+    },
+    {
+        "Category": "Other",
+        "Name": "New Relic",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "https://newrelic.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Moz",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "https://moz.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Optimizely",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "https://www.optimizely.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Google Analytics",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "botkeeper",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "https://www.botkeeper.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Evernote",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "https://evernote.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Zenefits",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "https://www.zenefits.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Square",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "https://squareup.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Buffer",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "https://buffer.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Rescue Time",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "https://www.rescuetime.com/",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Autosend",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "OptiMonk",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "SimilarTech",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Upsight",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "UserTesting",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "LeadPages",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Heap",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "OptinMonster",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Mixpanel",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "Artisan",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Description": ""
+    }
 ];
