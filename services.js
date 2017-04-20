@@ -28,7 +28,7 @@ function listServices(category) {
 
     '<div class="tab-content">' +
       '<div id="'+ service.Name + '-description" class="tab-pane fade in active">' +
-        '<p class="list-group-item-text">'+ service.Description +'</p> <br>';
+        '<p class="list-group-item-text">'+ service.Description +'</p>';
       //
       // // Case for putting tags inside descritption element
       //   htmlTable += '<br>';
@@ -41,11 +41,9 @@ function listServices(category) {
       htmlTable += '</div>' +
       '<div id="'+ service.Name + '-pricing" class="tab-pane fade">' +
         '<p>'+ service.Pricing +'</p>' +
-        '<br>' +
       '</div>' +
       '<div id="' + service.Name + '-recommendation" class="tab-pane fade">' +
         '<p>'+ service.Recommendation+'</p>' +
-        '<br>'+
       '</div>' +
     '</div>';
 
