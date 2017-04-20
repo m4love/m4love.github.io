@@ -83,7 +83,7 @@ var services = [
         "Link": "https://www.rocketlawyer.com/",
         "Pricing": "Premium ($39.95 per month), Accelerate ($49.95 per month)",
         "Recommendation": "",
-        "Logo": "",
+        "Logo": "https://res.cloudinary.com/crunchbase-production/image/upload/v1399569442/bvwlhoswhk9hysd5iwwm.png",
         "Description": "Rocklet Lawyer helps you easily create legal documents for your company and get legal advice from a lawyer."
     },
     {
@@ -96,7 +96,7 @@ var services = [
         "Link": "https://www.startupdocuments.com/",
         "Pricing": "Varies. Starts at $99 for a Terms of Service document and reaches up to form a California LLC.",
         "Recommendation": "",
-        "Logo": "",
+        "Logo": "http://bedrocksf.com/wp-content/uploads/2015/06/Screen-Shot-2015-06-21-at-4.52.45-PM.png",
         "Description": "Startup Documents generates and stores your company's documents during your early stages."
     },
     {
@@ -109,7 +109,7 @@ var services = [
         "Link": "https://termsfeed.com/",
         "Pricing": "Varies. Starts at $0 for general agreements and additional fees for additional clauses.",
         "Recommendation": "",
-        "Logo": "",
+        "Logo": "https://pbs.twimg.com/profile_images/378800000666231761/f563760ed91f886a9c82009049c54faf_400x400.png",
         "Description": "Termsfeed generates Terms of Service and Privacy Policies agreements."
     },
     {
@@ -122,7 +122,7 @@ var services = [
         "Link": "https://trademarkfactory.ca/",
         "Pricing": "I Feel Lucky ($1,495), All-Inclusive ($2,495), Ultimate ($5,995)",
         "Recommendation": "",
-        "Logo": "",
+        "Logo": "https://trademarkfactory.ca/img/mediakit/trademark-factory-logo-black.png",
         "Description": "Trademark Factory registers your company's trademark to help you protect your intellectual property."
     },
     {
@@ -135,7 +135,7 @@ var services = [
         "Link": "https://www.clerky.com/",
         "Pricing": "Formation (starts at $99), Fundraising (starts at $99 for 6 months), Hiring (starts at $19 per month), ",
         "Recommendation": "",
-        "Logo": "",
+        "Logo": "http://entreholic.com/wp-content/uploads/2016/10/Clerky-Logo.png",
         "Description": "Clerky handles all your startups legal paperwork needs as it grows, ranging from fundraising to hiring."
     },
     {
@@ -161,7 +161,7 @@ var services = [
         "Link": "https://www.shopify.com/",
         "Pricing": "",
         "Recommendation": "",
-        "Logo": "",
+        "Logo": "https://cdn.shopify.com/assets2/press/brand/glyph-sample-square-large-323e1b438838e7286ebf64f8909b19752154e4af958e3df512322797829a24a7.png",
         "Description": ""
     },
     {
