@@ -12,6 +12,7 @@ var services = [
         "Link": "http://mailchimp.com/",
         "Pricing": "New Business (Free), Growing Business ($10 per month), Pro Marketer (additional $199 per month)",
         "Recommendation": "For any company that wants to customize and send automated emails to their audience.",
+        "Logo": "https://static.mailchimp.com/web/brand-assets/mc_freddie_color_web.png",
         "Description": "MailChimp allows you to easily customize the way you send automated emails to most effectively market to your audience."
     },
     {
@@ -26,6 +27,7 @@ var services = [
         "Link": "https://basecamp.com/",
         "Pricing": "$99 per month, $1100 per year",
         "Recommendation": "Recommended if you have multiple projects at the same time and prefer to centralize team communications.",
+        "Logo": "https://37signals.com/images/basecamp-logo.png",
         "Description": "Basecamp organizes all of your company's projects, communications, and resources in a centralized location."
     },
     {
@@ -40,6 +42,7 @@ var services = [
         "Link": "https://trello.com/",
         "Pricing": "Free, Business Class ($9.99 per month), Enterprise ($20.83 per month)",
         "Recommendation": "Recommended if you prefer a visual-focused and user-friendly project management tool that is akin to using online whiteboards.",
+        "Logo": "http://seeklogo.com/images/T/trello-logo-CE7B690E34-seeklogo.com.png",
         "Description": "Trello's drag-and-drop interface allows you to easily organize and manage your company's projects"
     },
     {
@@ -53,6 +56,7 @@ var services = [
         "Link": "https://slack.com/ ",
         "Pricing": "Free, Standard ($6.67 per month), Plus ($12.50 per month)",
         "Recommendation": "For any company that wants to organize internal communications for improved team collaboration.",
+        "Logo": "https://hivyapp.com/public/img/testimonials/slack.png",
         "Description": "Slack organizes your internal communications through project-specific channels."
     },
     {
@@ -66,6 +70,7 @@ var services = [
         "Link": "https://www.uservoice.com/",
         "Pricing": "Varies.",
         "Recommendation": "",
+        "Logo": "https://cdn.worldvectorlogo.com/logos/uservoice.svg",
         "Description": "UserVoice \"transforms product feedback into intelligent data to drive product strategy.\""
     },
     {
@@ -78,6 +83,7 @@ var services = [
         "Link": "https://www.rocketlawyer.com/",
         "Pricing": "Premium ($39.95 per month), Accelerate ($49.95 per month)",
         "Recommendation": "",
+        "Logo": "",
         "Description": "Rocklet Lawyer helps you easily create legal documents for your company and get legal advice from a lawyer."
     },
     {
@@ -90,6 +96,7 @@ var services = [
         "Link": "https://www.startupdocuments.com/",
         "Pricing": "Varies. Starts at $99 for a Terms of Service document and reaches up to form a California LLC.",
         "Recommendation": "",
+        "Logo": "",
         "Description": "Startup Documents generates and stores your company's documents during your early stages."
     },
     {
@@ -102,6 +109,7 @@ var services = [
         "Link": "https://termsfeed.com/",
         "Pricing": "Varies. Starts at $0 for general agreements and additional fees for additional clauses.",
         "Recommendation": "",
+        "Logo": "",
         "Description": "Termsfeed generates Terms of Service and Privacy Policies agreements."
     },
     {
@@ -114,6 +122,7 @@ var services = [
         "Link": "https://trademarkfactory.ca/",
         "Pricing": "I Feel Lucky ($1,495), All-Inclusive ($2,495), Ultimate ($5,995)",
         "Recommendation": "",
+        "Logo": "",
         "Description": "Trademark Factory registers your company's trademark to help you protect your intellectual property."
     },
     {
@@ -123,21 +132,192 @@ var services = [
             "Legal"
         ],
         "Short Description": "Automated legal documents service.",
-        "Link": "",
-        "Pricing": "",
+        "Link": "https://www.clerky.com/",
+        "Pricing": "Formation (starts at $99), Fundraising (starts at $99 for 6 months), Hiring (starts at $19 per month), ",
         "Recommendation": "",
-        "Description": ""
+        "Logo": "",
+        "Description": "Clerky handles all your startups legal paperwork needs as it grows, ranging from fundraising to hiring."
     },
     {
-        "Category": "Legal",
-        "Name": "",
+        "Category": "Other",
+        "Name": "Asana",
         "Tags": [
-            "Legal"
+            ""
         ],
         "Short Description": "",
         "Link": "",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -150,6 +330,7 @@ var services = [
         "Link": "https://www.shopify.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -163,6 +344,7 @@ var services = [
         "Link": "http://www.searchmetrics.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": "Market analysis tool."
     },
     {
@@ -175,6 +357,7 @@ var services = [
         "Link": "https://ryver.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": "Project management and team communication tool."
     },
     {
@@ -188,6 +371,7 @@ var services = [
         "Link": "https://www.helpscout.net/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": "Tool for customer support and management."
     },
     {
@@ -200,6 +384,7 @@ var services = [
         "Link": "https://gsuite.google.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": "Internal infrastructure tools."
     },
     {
@@ -212,6 +397,7 @@ var services = [
         "Link": "https://asana.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": "Project management tool."
     },
     {
@@ -224,6 +410,7 @@ var services = [
         "Link": "https://newrelic.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -236,6 +423,7 @@ var services = [
         "Link": "https://moz.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -248,6 +436,7 @@ var services = [
         "Link": "https://www.optimizely.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -260,6 +449,7 @@ var services = [
         "Link": "https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -272,6 +462,7 @@ var services = [
         "Link": "https://www.botkeeper.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -284,6 +475,7 @@ var services = [
         "Link": "https://evernote.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -296,6 +488,7 @@ var services = [
         "Link": "https://www.zenefits.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -308,6 +501,7 @@ var services = [
         "Link": "https://squareup.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -320,6 +514,7 @@ var services = [
         "Link": "https://buffer.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -332,6 +527,7 @@ var services = [
         "Link": "https://www.rescuetime.com/",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -344,6 +540,7 @@ var services = [
         "Link": "",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -356,6 +553,7 @@ var services = [
         "Link": "",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -368,6 +566,7 @@ var services = [
         "Link": "",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -380,6 +579,7 @@ var services = [
         "Link": "",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -392,6 +592,7 @@ var services = [
         "Link": "",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -404,6 +605,7 @@ var services = [
         "Link": "",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -416,6 +618,7 @@ var services = [
         "Link": "",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -428,6 +631,7 @@ var services = [
         "Link": "",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -440,6 +644,7 @@ var services = [
         "Link": "",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
         "Description": ""
     },
     {
@@ -452,6 +657,20 @@ var services = [
         "Link": "",
         "Pricing": "",
         "Recommendation": "",
+        "Logo": "",
+        "Description": ""
+    },
+    {
+        "Category": "Other",
+        "Name": "DocuSign",
+        "Tags": [
+            ""
+        ],
+        "Short Description": "",
+        "Link": "",
+        "Pricing": "",
+        "Recommendation": "",
+        "Logo": "",
         "Description": ""
     }
 ];

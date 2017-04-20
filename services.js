@@ -11,7 +11,9 @@ function listServices(category) {
   });
   var htmlTable = '<div class="list-group" style="text-align: left; border-top: 0px; ">';
   filteredServices.forEach(function (service) {
-    htmlTable += '<div class="list-group-item" style="border-top: 1px solid rgb(47, 121, 185);">';
+    htmlTable += '<div class="row" style="margin-left: 0px; margin-right:0px; border-top: 1px solid rgb(47, 121, 185);">'
+    htmlTable += '<div class="col-md-9">'
+    htmlTable += '<div class="list-group-item">';
     htmlTable += '<a href="' + service.Link + '">';
     htmlTable +=
       '<h3 class="list-group-item-heading" >' +
@@ -53,6 +55,11 @@ function listServices(category) {
         htmlTable += '<span class="label label-info" style="margin-left:4px;">' + tag + '</span>';
       });
     }
+    htmlTable += '</div>';
+    htmlTable += '</div>';
+    htmlTable += '<div class="col-md-3">';
+    htmlTable += '<img src="' + service.Logo + '" style="padding: 30px;">';
+    htmlTable += '</div>';
     htmlTable += '</div>';
   });
   htmlTable += "</div>"
