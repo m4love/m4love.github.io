@@ -67,13 +67,13 @@ function updateCategories() {
   categories.forEach(function (category) {
     var prettified = category.replace(/[^a-zA-Z]/g, "")
     categoriesHTML += '<div class="panel panel-primary" style="margin: 10px; border-radius: 0px;" >';
-      categoriesHTML += '<div class="panel-heading" role="tab" id="headingOne" style="background-image: linear-gradient(to bottom,rgb(52, 183, 212) 0,rgb(0, 164, 202) 100%); border-radius: 0px;">';
-        categoriesHTML += '<h4 class="panel-title" style="font-size:18pt;">';
-          categoriesHTML += '<a role="button" data-toggle="collapse" data-parent="#accordion" href="#' + prettified + '-category" aria-expanded="true" aria-controls="collapseOne">';
+      categoriesHTML += '<a role="button" data-toggle="collapse" data-parent="#accordion" href="#' + prettified + '-category" aria-expanded="true" aria-controls="collapseOne" style="color: white;">';
+        categoriesHTML += '<div class="panel-heading" role="tab" id="headingOne" style="background-image: linear-gradient(to bottom,rgb(52, 183, 212) 0,rgb(0, 164, 202) 100%); border-radius: 0px;">';
+          categoriesHTML += '<h4 class="panel-title" style="font-size:18pt; color:white;">';
             categoriesHTML += category;
-          categoriesHTML += '</a>';
-        categoriesHTML += '</h4>';
-      categoriesHTML += '</div>';
+          categoriesHTML += '</h4>';
+        categoriesHTML += '</div>';
+      categoriesHTML += '</a>';
       categoriesHTML += '<div id="' + prettified + '-category" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">';
         categoriesHTML += listServices(category);
       categoriesHTML += '</div>';
