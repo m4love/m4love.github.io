@@ -21,9 +21,9 @@ function listServices(category) {
     htmlTable += '<p class="list-group-item-text">' + service["Short Description"] + '</p>' +'<br>';
     var service_name = service.Name;
     htmlTable += '<ul class="nav nav-tabs">' +
-    '<li class="active"><a data-toggle="tab" href="#' + service.Name + '-description">Description</a></li>' +
-      '<li><a data-toggle="tab" href="#' + service.Name + '-pricing">Pricing</a></li>' +
-      '<li><a data-toggle="tab" href="#' + service.Name + '-recommendation">Recommendation</a></li>' +
+    '<li class="active"><a data-toggle="tab" href="#' + service.Name + '-description"><b>Description</b></a></li>' +
+      '<li><a data-toggle="tab" href="#' + service.Name + '-pricing"><b>Pricing</b></a></li>' +
+      '<li><a data-toggle="tab" href="#' + service.Name + '-recommendation"><b>Recommendation</b></a></li>' +
     '</ul>'+
 
     '<div class="tab-content">' +
