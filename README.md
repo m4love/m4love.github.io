@@ -8,6 +8,7 @@
 
 `pip install -r requirements.txt`
 
+## Run
 `python tsv_to_json_converter.py > data.js`
 
 `open index.html`
