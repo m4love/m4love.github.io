@@ -12,4 +12,4 @@ for i in range(resources_data.shape[0]):
     temp_tags = temp_tag.split(",")
     temp.set_value(i, 'tags', temp_tags)
 
-print test.to_json(orient="records")
+print temp.to_json(orient="records")
