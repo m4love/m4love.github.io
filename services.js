@@ -1,27 +1,16 @@
 $(function() {
   // Handler for .ready() called.
 
-  listGroups();
   updateCategories();
 });
 
-// function updateServices() {
-//   var htmlTable = '<table class="table table-bordered">';
-//   services.forEach(function (service) {
-//     htmlTable += "<tr>";
-//     htmlTable += "<td>" + service.name + "</td>";
-//     htmlTable += "<td>" + service.short_description + "</td>";
-//     htmlTable += "<td><a href='" + service.read_more + "'>Read more.</a></td>";
-//     htmlTable += "</tr>";
-//   });
-//   htmlTable += "</table>"
-//   $('#resources').html(htmlTable);
-// }
-
-function listGroups() {
-  var htmlTable = '<div class="list-group" style="text-align: left;">';
-  services.forEach(function (service) {
-    htmlTable += '<div class="list-group-item">';
+function listServices(category) {
+  var filteredServices = services.filter(function(service) {
+    return service.category == category;
+  });
+  var htmlTable = '<div class="list-group" style="text-align: left; border-top: 0px; ">';
+  filteredServices.forEach(function (service) {
+    htmlTable += '<div class="list-group-item" style="border-top: 1px solid rgb(47, 121, 185);">';
     htmlTable += '<a href="' + service.link + '">';
     htmlTable +=
       '<h3 class="list-group-item-heading" >' +
@@ -68,27 +57,26 @@ function listGroups() {
     htmlTable += '</div>';
   });
   htmlTable += "</div>"
-  $('#resources').html(htmlTable);
+  //$('#resources').html(htmlTable);
+  return htmlTable;
 }
 
 function updateCategories() {
-  var htmlTable = '';
+  var categoriesHTML = '';
   categories.forEach(function (category) {
     var prettified = category.replace(/[^a-zA-Z]/g, "")
-    htmlTable += '<div class="panel panel-default">';
-      htmlTable += '<div class="panel-heading" role="tab" id="headingOne">';
-        htmlTable += '<h4 class="panel-title">';
-          htmlTable += '<a role="button" data-toggle="collapse" data-parent="#accordion" href="#' + prettified + '-category" aria-expanded="true" aria-controls="collapseOne">';
-            htmlTable += category;
-          htmlTable += '</a>';
-        htmlTable += '</h4>';
-      htmlTable += '</div>';
-      htmlTable += '<div id="' + prettified + '-category" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">';
-        htmlTable += '<div class="panel-body">';
-          htmlTable += 'jfslkdfs';
-        htmlTable += '</div>';
-      htmlTable += '</div>';
-    htmlTable += '</div>';
+    categoriesHTML += '<div class="panel panel-primary" style="margin: 10px; border-radius: 0px;" >';
+      categoriesHTML += '<div class="panel-heading" role="tab" id="headingOne" style="background-image: linear-gradient(to bottom,rgb(52, 183, 212) 0,rgb(0, 164, 202) 100%); border-radius: 0px;">';
+        categoriesHTML += '<h4 class="panel-title" style="font-size:18pt;">';
+          categoriesHTML += '<a role="button" data-toggle="collapse" data-parent="#accordion" href="#' + prettified + '-category" aria-expanded="true" aria-controls="collapseOne">';
+            categoriesHTML += category;
+          categoriesHTML += '</a>';
+        categoriesHTML += '</h4>';
+      categoriesHTML += '</div>';
+      categoriesHTML += '<div id="' + prettified + '-category" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">';
+        categoriesHTML += listServices(category);
+      categoriesHTML += '</div>';
+    categoriesHTML += '</div>';
   });
-  $('#accordion').html(htmlTable);
+  $('#accordion').html(categoriesHTML);
 }

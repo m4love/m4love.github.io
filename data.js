@@ -2,13 +2,15 @@ var categories = [
   "Legal",
   "Marketing",
   "UX/UI",
-  "Product Development"
+  "Product Development",
+  "Communication"
 ]
 
 var services = [
   {
     "name" : "Slack",
     "short_description" : "A cloud-based team collaboration tool.",
+    "category": "Communication",
     "description" : "Awesome rocking app",
     "link": "https://slack.com",
     "pricing": "Capitalism but free for less people",
@@ -18,6 +20,7 @@ var services = [
   {
     "name" : "QuickBooks",
     "short_description" : "Simple accounting tool for startups.",
+    "category": "Product Development",
     "description" : "",
     "link": "https://quickbooks.intuit.com/",
     "pricing": "Capitalism but free for less people",
@@ -27,6 +30,7 @@ var services = [
   {
     "name" : "Clerky",
     "short_description" : "Automated legal paperwork for startups.",
+    "category": "Legal",
     "description" : "",
     "link": "https://www.clerky.com/",
     "pricing": "",
@@ -36,6 +40,7 @@ var services = [
   {
     "name" : "Something",
     "short_description" : "Automated legal paperwork for startups.",
+    "category": "Legal",
     "description" : "",
     "link": "https://www.clerky.com/",
     "pricing": "",
