@@ -1,4 +1,4 @@
-var categories = ["Marketing", "Other", "Teamwork", "Product Development", "Legal"];
+var categories = ["Product Development", "Marketing", "Legal", "Other", "Teamwork", "Data Analytics"];
 var services = [
     {
         "Category": "Marketing",
@@ -139,17 +139,18 @@ var services = [
         "Description": "Clerky handles all your startups legal paperwork needs as it grows, ranging from fundraising to hiring."
     },
     {
-        "Category": "Other",
+        "Category": "Teamwork",
         "Name": "Asana",
         "Tags": [
-            ""
+            "Communications",
+            " Teamwork"
         ],
-        "Short Description": "",
-        "Link": "",
-        "Pricing": "",
+        "Short Description": "Task Management Tool",
+        "Link": "https://www.asana.com/",
+        "Pricing": "Free (for upto 15 members), Premium ($9.99 per member per month billed annually)",
         "Recommendation": "",
-        "Logo": "",
-        "Description": ""
+        "Logo": "https://s-media-cache-ak0.pinimg.com/originals/4f/06/b4/4f06b4d2d794773743348411bec46855.png",
+        "Description": "Asana puts team tasks & conversations together, so you can get more done and rely less on email. Their mission is to empower humanity to do great things. They\u2019ve re-imagined how work gets done through a fast and versatile web application that connects everyone with what\u2019s going on, their shared priorities, and who owns each part of the effort. Asana is free for teams up to 15 people with unlimited projects and tasks."
     },
     {
         "Category": "Other",
@@ -159,349 +160,157 @@ var services = [
         ],
         "Short Description": "E-commerce platform.",
         "Link": "https://www.shopify.com/",
-        "Pricing": "",
+        "Pricing": "Free Trial($0.00 per month), Basic ($29.00 per month) for starting a new business, Shopify ($79.00 per month) for growing business, Advanced Shopify ($299 per month) for large business",
         "Recommendation": "",
         "Logo": "https://cdn.shopify.com/assets2/press/brand/glyph-sample-square-large-323e1b438838e7286ebf64f8909b19752154e4af958e3df512322797829a24a7.png",
-        "Description": ""
+        "Description": "Shopify is a commerce platform that allows anyone to easily sell online, in-store, and everywhere in between. Shopify offers a professional online storefront, a payment solution to accept credit cards, and the Shopify POS application to power retail sales"
     },
     {
-        "Category": "Other",
+        "Category": "Marketing",
         "Name": "Searchmetrics",
         "Tags": [
             "Data & Analytics",
             " Market Intellgience & Research"
         ],
-        "Short Description": "",
+        "Short Description": "Market Analysis Tool (SEO tool)",
         "Link": "http://www.searchmetrics.com/",
-        "Pricing": "",
+        "Pricing": "Essentials($69 per month), Essential Pro($149 per month), Suite(Price on request)",
         "Recommendation": "",
-        "Logo": "",
-        "Description": "Market analysis tool."
+        "Logo": "http://www.searchmetrics.com/wp-content/themes/sm/img/sm-logo-lg.png",
+        "Description": "Searchmetrics provides an interactive SEO platform that offers a holistic consulting approach to helping companies develop and execute intelligent, long term digital marketing and content strategies."
     },
     {
-        "Category": "Other",
+        "Category": "Teamwork",
         "Name": "Ryver",
         "Tags": [
-            "Team Building"
+            "Team Building",
+            " Communications"
         ],
-        "Short Description": "",
+        "Short Description": "Project management and team communication tool.",
         "Link": "https://ryver.com/",
-        "Pricing": "",
+        "Pricing": "Free",
         "Recommendation": "",
-        "Logo": "",
-        "Description": "Project management and team communication tool."
+        "Logo": "https://10664-presscdn-0-2-pagely.netdna-ssl.com/wp-content/uploads/2017/01/ryver-logo.png",
+        "Description": "Ryver allows to perform all team communications in one place. It supports chats, posts and files. It even allows users who use email to perfrom communications directly from email. It supports Web, Mac/Windows desktops, Android/iOS/Microsoft."
     },
     {
-        "Category": "Other",
+        "Category": "Marketing",
         "Name": "HelpScout",
         "Tags": [
             "User Retention",
             " Data & Analytics"
         ],
-        "Short Description": "",
+        "Short Description": "Tool for customer support and management.",
         "Link": "https://www.helpscout.net/",
-        "Pricing": "",
+        "Pricing": "On Annual Billing: Basic($8 per user per month), Standard($15 per user per month), Plus($27 per user per month). On Monthly Billing: Basic($12 per user per month), Standard($20 per user per month), Plus($27 per user per month)",
         "Recommendation": "",
-        "Logo": "",
-        "Description": "Tool for customer support and management."
+        "Logo": "https://lh3.googleusercontent.com/Y5Pc4zSx1YgBSkbMfd9EeEwU6nhxQ-dTzk4980MCYzRUrMMTIU6ubJlYXQxLi3arIRE2=w300",
+        "Description": "Help Scout allows you to deliver great email support and get setup in minutes without any of the typical help desk complexities.It allows shared email inbox for managing tickets. It allows team performance reports on conversation, productivity, and happiness."
     },
     {
-        "Category": "Other",
-        "Name": "Google Apps for Work",
+        "Category": "Teamwork",
+        "Name": "G Suite",
         "Tags": [
-            ""
+            "Communications",
+            " Productivity"
         ],
-        "Short Description": "",
+        "Short Description": "Internal infrastructure tools.",
         "Link": "https://gsuite.google.com/",
-        "Pricing": "",
+        "Pricing": "Flexible Plan(No commitment): G Suite ($5 per user per month), G Suite Business($10 per user per month). Annual Plan(1 full year service commitment): G Suite($4.17 per user license per month)",
         "Recommendation": "",
-        "Logo": "",
-        "Description": "Internal infrastructure tools."
+        "Logo": "https://gsuite.google.com/setup/assets/images/misc/logo-350x215.png",
+        "Description": "G Suite (formerly Google Apps for Work) comprises Gmail, Hangouts, Calendar, Google+ for communication; Drive for storage; Docs, Sheets, Slides, Forms and Sites for collaboration. It allows professional email with Gmail with your domain name."
     },
     {
-        "Category": "Other",
-        "Name": "Asana",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "https://asana.com/",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": "Project management tool."
-    },
-    {
-        "Category": "Other",
+        "Category": "Data Analytics",
         "Name": "New Relic",
         "Tags": [
-            ""
+            "Data & Analytics"
         ],
-        "Short Description": "",
+        "Short Description": "Performance analytics tool",
         "Link": "https://newrelic.com/",
-        "Pricing": "",
+        "Pricing": "Cost is calculated on amount of (CPU Cores + GB RAM) * hours used. The cost differs from Cloud-based options and Self-hosted environments.",
         "Recommendation": "",
-        "Logo": "",
-        "Description": ""
+        "Logo": "https://newrelic.com/assets/newrelic/source/NewRelic-logo-bug-086cb1887d4a4dfc9801a38bb338f176.svg",
+        "Description": "New Relic monitors app performance down to specific lines of code show how each component is connected. It gives alerts about potential Full-stack problems before they blow up."
     },
     {
-        "Category": "Other",
+        "Category": "Marketing",
         "Name": "Moz",
         "Tags": [
-            ""
+            "Marketing"
         ],
-        "Short Description": "",
+        "Short Description": "SEO tools",
         "Link": "https://moz.com/",
-        "Pricing": "",
+        "Pricing": "Moz Local: Essential($99 per listing per year,), Professional($179 per listing per year), Premium($249 per listing per year). Moz Pro: Standard($99 per month), Medium($149 per month), Large($249 per month), Premium($599 per month) [20% saving on yearly subscription]",
         "Recommendation": "",
-        "Logo": "",
-        "Description": ""
+        "Logo": "https://dc8hdnsmzapvm.cloudfront.net/assets/images/about/brand/moz-blue-thumbnail.jpg?2a3c877",
+        "Description": "Moz provides the complete SEO toolset. It provides SEO metrics including Page Authority and Domain Authority. It also deciphers "
     },
     {
-        "Category": "Other",
+        "Category": "Product Development",
         "Name": "Optimizely",
         "Tags": [
-            ""
+            "Optimization",
+            " Personalization"
         ],
-        "Short Description": "",
+        "Short Description": "Experience optimization platform",
         "Link": "https://www.optimizely.com/",
-        "Pricing": "",
+        "Pricing": "Premiumn Pay as You Go ($49 per 1000 monthly unique visitors). Other plans require contact with sales.",
         "Recommendation": "",
-        "Logo": "",
-        "Description": ""
+        "Logo": "https://d36spl5w3z9i0o.cloudfront.net/files/o/p/optimizely_docebosaas_com/assets/img/original/eb9b1ba1b852e6f7f7a391bb076dd6deab4f08fc.png",
+        "Description": "Optimizely enables businesses to experiment deeply into their technology stack and broadly across the entire customer experience. It enables A/B and multivariate testing for users to enhance their websites & mobile apps."
     },
     {
-        "Category": "Other",
+        "Category": "Data Analytics",
         "Name": "Google Analytics",
         "Tags": [
-            ""
+            "Data & Analytics"
         ],
-        "Short Description": "",
+        "Short Description": "Web analytics service",
         "Link": "https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/",
-        "Pricing": "",
+        "Pricing": "Free; Google Analytics 360($12,500 per month)",
         "Recommendation": "",
-        "Logo": "",
-        "Description": ""
+        "Logo": "https://developers.google.com/analytics/images/terms/logo_lockup_analytics_icon_vertical_black_2x.png",
+        "Description": "Google analytics tracks and reports website traffic. Using AdWords, users can now review online campaigns by tracking landing page quality and conversions (goals)."
     },
     {
         "Category": "Other",
         "Name": "botkeeper",
         "Tags": [
-            ""
+            "Accounting"
         ],
-        "Short Description": "",
+        "Short Description": "Bookkeeping tool",
         "Link": "https://www.botkeeper.com/",
-        "Pricing": "",
+        "Pricing": "Simple($250 per month), Grow($500 per month), Scale($800 per month)",
         "Recommendation": "",
-        "Logo": "",
-        "Description": ""
+        "Logo": "https://www.botkeeper.com/wp-content/uploads/2015/07/Logo-Botkeeper-Transparent1-e1438003524552.png",
+        "Description": "Botkeeper provides a powerful combination of skilled accountants and automated data entry through use of machine learning and AI."
     },
     {
         "Category": "Other",
         "Name": "Evernote",
         "Tags": [
-            ""
+            "Productivity"
         ],
-        "Short Description": "",
+        "Short Description": "Notetaking app",
         "Link": "https://evernote.com/",
-        "Pricing": "",
+        "Pricing": "Basic(Free), Plus($34.00 per year), Premium($69.99 per year)",
         "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "Zenefits",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "https://www.zenefits.com/",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
+        "Logo": "https://evernote.com/media/img/logos/evernote_logo_center_4c-lrg.png",
+        "Description": "Evernote is a cross-platform, fremium app designed for note taking, organizing, and archiving."
     },
     {
         "Category": "Other",
         "Name": "Square",
         "Tags": [
-            ""
+            "Payment"
         ],
-        "Short Description": "",
+        "Short Description": "Credit Card Prcoessing tool",
         "Link": "https://squareup.com/",
-        "Pricing": "",
+        "Pricing": "2.75% Per Transaction; 3.5% + 15 cents per Keyed-in transaction",
         "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "Buffer",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "https://buffer.com/",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "Rescue Time",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "https://www.rescuetime.com/",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "Autosend",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "OptiMonk",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "SimilarTech",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "Upsight",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "UserTesting",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "LeadPages",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "Heap",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "OptinMonster",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "Mixpanel",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "Artisan",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
-    },
-    {
-        "Category": "Other",
-        "Name": "DocuSign",
-        "Tags": [
-            ""
-        ],
-        "Short Description": "",
-        "Link": "",
-        "Pricing": "",
-        "Recommendation": "",
-        "Logo": "",
-        "Description": ""
+        "Logo": "https://public-web-production-f.squarecdn.com/assets/pages/press/downloads/square.01-53fec4249b83cfa1fa474e6a9b3afa94.jpg",
+        "Description": "Square's complete register service is a full point of sale with tools for every part of running a business, from accepting credit cards and tracking sales and inventory to small-business financing."
     }
 ];
