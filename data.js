@@ -1,4 +1,4 @@
-var categories = ["Product Development", "Marketing", "Legal", "Other", "Teamwork", "Data Analytics"];
+var categories = ["Marketing","Data Analytics","Product Development","Teamwork","Legal","Other"]
 var services = [
     {
         "Category": "Marketing",
