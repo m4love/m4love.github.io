@@ -22,14 +22,15 @@ function listServices(category) {
     htmlTable += '</a>';
     htmlTable += '<p class="list-group-item-text">' + service["Short Description"] + '</p>' +'<br>';
     var service_name = service.Name;
+    var prettified = service_name.replace(/[^a-zA-Z]/g, "")
     htmlTable += '<ul class="nav nav-tabs">' +
-    '<li class="active"><a data-toggle="tab" href="#' + service.Name + '-description"><b>Description</b></a></li>' +
-      '<li><a data-toggle="tab" href="#' + service.Name + '-pricing"><b>Pricing</b></a></li>' +
-      '<li><a data-toggle="tab" href="#' + service.Name + '-recommendation"><b>Recommendation</b></a></li>' +
+    '<li class="active"><a data-toggle="tab" href="#' + prettified + '-description"><b>Description</b></a></li>' +
+      '<li><a data-toggle="tab" href="#' + prettified + '-pricing"><b>Pricing</b></a></li>' +
+      '<li><a data-toggle="tab" href="#' + prettified + '-recommendation"><b>Recommendation</b></a></li>' +
     '</ul>'+
 
     '<div class="tab-content">' +
-      '<div id="'+ service.Name + '-description" class="tab-pane fade in active">' +
+      '<div id="'+ prettified + '-description" class="tab-pane fade in active">' +
         '<p class="list-group-item-text">'+ service.Description +'</p>';
       //
       // // Case for putting tags inside descritption element
@@ -41,10 +42,10 @@ function listServices(category) {
       //   }
 //
       htmlTable += '</div>' +
-      '<div id="'+ service.Name + '-pricing" class="tab-pane fade">' +
+      '<div id="'+ prettified + '-pricing" class="tab-pane fade">' +
         '<p>'+ service.Pricing +'</p>' +
       '</div>' +
-      '<div id="' + service.Name + '-recommendation" class="tab-pane fade">' +
+      '<div id="' + prettified + '-recommendation" class="tab-pane fade">' +
         '<p>'+ service.Recommendation+'</p>' +
       '</div>' +
     '</div>';
